@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(159, 250, 191);
+    color: black;
+}
+
+h1 {
+    font-family: 'cambria';
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'cambria';
+    font-size: 26px;
+    text-align: center;
+}
+
+p {
+    font-family: 'cambria', serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20 px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px black solid;
+    background-color: rgb(124, 248, 167);
+    background: linear-gradient(rgb(159, 250, 191),  rgb(239, 218, 98));
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.column {
+    flex: 1; /*para que las columnas sean del mismo tamaño*/
+    padding: 10px;
+    border: 2px black solid;
+    background-color: rgb(239, 218, 98);
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+button{
+    padding: 8px;
+    background-color: rgba(59, 57, 58, 0.226);
+    border: 2px black solid;
+    border-radius: 5px;
+    font-family: 'cambria';
+    width: 130px;
+    align-self: center;
+}
+
+button:hover{
+    background-color: white;
+}
+
+#myForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.botonenviar{
+    width: 80px;
+    background-color: rgba(240, 116, 187, 0.579);
+}

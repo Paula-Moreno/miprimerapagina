@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<title> Mi primer website </title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+    <div class="container">
+        <h1>Bienvenidos a mi primer Website!</h1>
+        <p>Soy Paula, ¡y esta es mi primera página web!</p>
+        <div class="row">
+            <div class="column">
+                <h2>¿Qué aprenderé?</h2>
+                <p>Estoy aprendiendo desarrollo web para crear sitios web
+                    visualmente atrapantes y funcionales
+                </p>
+            </div>
+            <div class="column">
+                <h2>Lenguajes que aprenderé a usar</h2>
+                <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y
+                    JavaScript. Estos lenguajes me ayudarán a crear una base sólida en
+                    el desarrollo web front-end
+                </p>
+            </div>
+        </div>
+        <button onclick="showAlert()"> ¡Haz click en mí!</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="form">
+        <form id="myForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" required>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="mexico">México</option>
+                <option value="panama">Panamá</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Perú</option>
+                <option value="venezuela">Venezuela</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button class="botonenviar" type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
